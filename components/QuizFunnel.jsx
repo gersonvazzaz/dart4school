@@ -133,7 +133,7 @@ function StepItems({ catalog, getQty, setQty, totalItems, total, onBack, onNext 
         Scegli la taglia e la quantità per ogni capo. Puoi ordinare più taglie dello stesso articolo.
       </p>
 
-      <div className="items-list">
+      <div className="items-list" style={{ paddingBottom: 100 }}>
         {catalog.map(item => (
           <div key={item.id} className="item-card">
             <div className="item-header">
