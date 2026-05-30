@@ -154,6 +154,8 @@ function StepItems({ catalog, getQty, setQty, totalItems, total, onBack, onNext 
         ))}
       </div>
 
+      <div className="sticky-spacer" />
+
       <div className="sticky-bar">
         <div>
           <div className="sticky-info">

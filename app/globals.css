@@ -313,18 +313,22 @@ body {
 /* ── Sticky total ── */
 
 .sticky-bar {
-  position: sticky;
-  bottom: 16px;
-  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-top: 1px solid var(--border);
   padding: 14px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 -4px 20px rgba(60, 42, 30, 0.1);
   z-index: 100;
+}
+
+.sticky-spacer {
+  height: 90px;
 }
 
 .sticky-info { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 2px; }
@@ -510,6 +514,10 @@ body {
   .step-title { font-size: 2rem; }
 
   .sticky-bar {
+    max-width: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: var(--radius) var(--radius) 0 0;
     padding: 16px 28px;
   }
 }
