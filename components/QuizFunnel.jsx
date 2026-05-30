@@ -292,7 +292,7 @@ export default function QuizFunnel() {
     <div className="app">
       <header className="header">
         <div className="header-logo">Istituto Adorazione Perpetua del Sacro Cuore</div>
-        <div className="header-sub">Ordine Divise Scolastiche 2024/2025</div>
+        <div className="header-sub">Ordine Divise Scolastiche 2026/2027</div>
       </header>
 
       <main className="main">
