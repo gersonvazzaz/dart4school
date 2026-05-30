@@ -315,16 +315,17 @@ body {
 
 .sticky-bar {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
   background: var(--white);
-  border-top: 1px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 14px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 -4px 20px rgba(60, 42, 30, 0.1);
+  box-shadow: var(--shadow-lg);
   z-index: 100;
 }
 
@@ -513,8 +514,9 @@ body {
   .sticky-bar {
     max-width: 520px;
     left: 50%;
+    right: auto;
     transform: translateX(-50%);
-    border-radius: var(--radius) var(--radius) 0 0;
+    width: calc(100% - 48px);
     padding: 16px 28px;
   }
 }
