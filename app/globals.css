@@ -227,7 +227,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-bottom: 90px;
+  padding-bottom: 120px;
 }
 
 .item-card {
