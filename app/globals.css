@@ -227,7 +227,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-bottom: 120px;
 }
 
 .item-card {
@@ -314,10 +313,9 @@ body {
 /* ── Sticky total ── */
 
 .sticky-bar {
-  position: fixed;
+  position: sticky;
   bottom: 16px;
-  left: 16px;
-  right: 16px;
+  margin-top: 20px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -512,11 +510,6 @@ body {
   .step-title { font-size: 2rem; }
 
   .sticky-bar {
-    max-width: 520px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    width: calc(100% - 48px);
     padding: 16px 28px;
   }
 }
