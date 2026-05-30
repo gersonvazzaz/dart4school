@@ -327,10 +327,6 @@ body {
   z-index: 100;
 }
 
-.sticky-spacer {
-  height: 90px;
-}
-
 .sticky-info { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 2px; }
 .sticky-total { font-size: 1.3rem; font-weight: 700; color: var(--text); }
 
