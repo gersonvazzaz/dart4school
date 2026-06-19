@@ -113,6 +113,16 @@ export async function POST(req) {
     mode: 'payment',
     success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${baseUrl}/`,
+    // Dati di contatto del genitore, raccolti nella schermata di pagamento Stripe.
+    // (L'email è già raccolta in automatico da Stripe Checkout.)
+    phone_number_collection: { enabled: true },
+    custom_fields: [
+      {
+        key: 'genitore',
+        label: { type: 'custom', custom: 'Nome e cognome del genitore' },
+        type: 'text',
+      },
+    ],
     metadata: {
       scuola: SCHOOL_NAME[school],
       alunno: nome,
